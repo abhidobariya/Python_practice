@@ -11,5 +11,5 @@ print(series1)
 
 pd.Series(my_list, index= ['a', 'ABC','&'])
 
-#/ hgkjhk
+
 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Shopping Website</title>
+    </head>
+    <body>
+        <h1>Welcome to my shopping website!</h1>
+        <p>Here are our products:</p>
+        <ul>
+            {% for product in products %}
+            <li>{{ product }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

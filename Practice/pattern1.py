@@ -121,3 +121,43 @@ for i in range(a,0,-1):
     for j in range(i,a):
         print(j,end=" ")
     print("\r")
+
+# a
+# a b
+# a b c
+# a b c d
+
+a= 4
+
+for i in range(0,a+1):
+    a = 97
+    for j in range(1,i+1):
+        print("%c"%(a),end=" ")
+        a += 1
+    print("\r")
+
+
+# A
+# A B
+# A B C
+# A B C D
+
+a = 4
+
+for i in range(0,a+1):
+    A = 65
+    for j in range(1,i+1):
+        print("%c"%(A),end=" ")
+        A += 1
+    print("\r")
+
+
+# a
+# b a
+# c b a
+# d c b a
+
+for i in range(97,101):
+    for j in range(i,96,-1):
+        print(chr(j),end="")
+    print()

@@ -159,5 +159,44 @@ for i in range(0,a+1):
 
 for i in range(97,101):
     for j in range(i,96,-1):
-        print(chr(j),end="")
+        print(chr(j),end=" ")
     print()
+
+
+# A
+# B A
+# C B A
+# D C B A
+
+for i in range(65,69):
+    for j in range(i,64,-1):
+        print(chr(j),end=" ")
+    print("\r")
+
+
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+
+a = 5
+
+for i in range(1,a):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print("\r")
+
+
+# 4
+# 3 3
+# 2 2 2
+# 1 1 1 1
+
+a = 4
+
+for i in range(a):
+    for j in range(i+1):
+        print(a-i,end=" ")
+    print("\r")
+
+

@@ -48,3 +48,11 @@ label_message = tk.Label(root, text="")
 label_message.grid(row=3, column=1)
 
 root.mainloop()
+
+from flask import redirect, url_for
+
+@app.route('/login')
+def login():
+    # Do some login stuff here
+    return redirect(url_for('app.py'))
+

@@ -1,13 +1,3 @@
-"""Game to practice typing.
-
-Exercises
-
-1. Change the speed of letters.
-2. Add uppercase letters.
-3. Make the game faster as the score gets higher.
-4. Make the letters more frequent as the score gets higher.
-"""
-
 from random import choice, randrange
 from string import ascii_lowercase
 from turtle import *
@@ -20,12 +10,11 @@ score = 0
 
 
 def inside(point):
-    """Return True if point on screen."""
     return -200 < point.x < 200 and -200 < point.y < 200
 
 
 def draw():
-    """Draw letters."""
+
     clear()
 
     for target, letter in zip(targets, letters):
@@ -36,7 +25,7 @@ def draw():
 
 
 def move():
-    """Move letters."""
+
     if randrange(20) == 0:
         x = randrange(-150, 150)
         target = vector(x, 200)
@@ -53,11 +42,11 @@ def move():
         if not inside(target):
             return
 
-    ontimer(move, 100)
+    ontimer(move, 50)
 
 
 def press(key):
-    """Press key."""
+
     global score
 
     if key in letters:
